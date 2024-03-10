@@ -1,0 +1,375 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    
+    
+    
+    
+}
+
+h1{
+    font-size: 20px;
+    color: black;
+    font-style: italic;
+    background-color: rgb(204, 204, 204);
+    list-style: decimal;
+    
+    
+
+}
+
+ul{
+   width: 100%;
+   height: 75px;
+   line-height:75px;
+   padding: 0px 100px;
+   position: fixed;
+   margin-top: -63px;
+   margin-left: 200px;
+   
+   
+}
+
+ul li {
+     display: inline-block;
+
+    }
+    
+
+
+
+ul li a {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding: 0px 30px;
+    color: black;
+    font-weight: bold;
+     text-decoration: none; 
+}
+
+ul li a:hover{
+    color:rgb(238, 7, 7) ;
+    transition: all 0.6s ease 0s;
+}
+
+.Home{
+  
+ 
+    animation: floatImage 10s ease-in-out infinite;
+}
+@keyframes floatImage {
+
+     0% {
+        transform: translateY(0);
+     }50% {
+        transform: translateY(-2.4rem);
+     }
+     100% 
+     {
+
+        transform: translateY(0);
+    }
+}
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+  
+
+img{
+ margin-top: 17px;
+}
+
+.heading{
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 59px auto;
+  font-size: 25px;
+  background-image: url(stock-photo--businesswoman-hand-working-with-laptop-computer-tablet-and-smart-phone-in-modern-office-with-1041718081.jpg);
+ background-repeat: no-repeat;
+}
+p{
+    margin-inline-start: 569px;   
+}
+
+h3{
+    text-align: center;
+    font-size: 55px;
+}
+
+.card {
+    box-sizing: border-box;
+    width: 190px;
+    height: 254px;
+    background: rgba(217, 217, 217, 0.58);
+    border: 1px solid white;
+    box-shadow: 12px 17px 51px rgba(211, 30, 30, 0.409);
+    backdrop-filter: blur(6px);
+    border-radius: 17px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    user-select: none;
+    font-weight: bolder;
+    color: black;
+    margin-inline-start:269px;    
+  }
+  
+  .card:hover {
+    border: 1px solid rgb(26, 80, 188);
+    transform: scale(1.05);
+  }
+  
+  .card:active {
+    transform: scale(0.95) rotateZ(1.7deg);
+  }
+
+  h4{
+    text-align: center;
+    font-size: 55px;
+  }
+
+  .container{
+	width: 80%;
+	height: 80%;
+	display: grid;
+	justify-content: center;
+	align-content: center;
+	
+	.testimonial-box{
+		position: relative;
+		width: 500px;
+		height: 300px;
+		
+		&::before{
+			content: '';
+			position: absolute;
+			top: 10px;
+			left: -100px;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background:  linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%) , rgba(255, 255, 255, 0.8);
+			box-shadow: -5px 5px 10px rgba(0,0,0,.3);
+			z-index: -1;
+		}
+			&::after{
+			content: '';
+			position: absolute;
+			bottom: 10px;
+			right: -100px;
+			width: 200px;
+			height: 200px;
+			border-radius: 50%;
+			background: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%) , rgba(255, 255, 255, 0.8);
+			box-shadow: 5px 5px 10px rgba(0,0,0,.3);
+			z-index: -1;
+		}
+		
+		.testimonial{
+			display: grid;
+			grid-template-rows: 1.3fr 0.7fr;
+			box-shadow: 0 0 5px rgba(0,0,0,.5);
+			width: 100%;
+			height: 100%;
+			background-image: linear-gradient(120deg, #e0c3fc 0%, #8ec5fc 100%);
+			padding: 10px 20px;
+			position: relative;
+			
+			.fas{
+				position: absolute;
+				top: 0;
+				right: 0;
+				padding: 10px;
+				font-size: 25px;
+				color: #222;
+			}
+			
+			.testimonial-text{
+				font-size: 16px;
+				line-height: 25px;
+				text-align: center;
+				padding: 25px 15px;
+				width: 100%;
+			}
+			
+			.testimonial-user{
+				display: flex;
+				align-items: center;
+				
+				.user-img{
+					box-shadow: 0 0 10px rgba(0,0,0,.5);
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+				}
+				
+				.user-info{
+					margin: 0 20px;
+					display: grid;
+					grid-template-rows: 1fr 1fr;
+					
+					.user-name{
+						font-weight: 800;
+					}
+					
+					.user-job-details{
+						margin: 5px 0 0 0;
+						position: relative;
+						display: flex;
+						justify-content: space-between;
+						
+						.line{
+							position: absolute;
+							width: 2px;
+							height: 100%;
+							background: #000;
+							left: 50%;
+							top: 0;
+							transform: translateX(-50%);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+
+h6{
+	font-size: 55px;
+	text-align: center;
+}
+a{
+	margin: 0 10px;
+	color: #fff;
+	font-size: 1.5rem;
+	transition: all 400ms ease;
+}
+
+a:hover{
+	color: #311a1a;
+}
+
+h5{
+    font-size: 55px;
+    text-align: center;
+}
+.footer .footer-socila-icon a:hover {
+	background: #1baaa0;
+}
+
+.footer .footer-links {
+	margin: 0;
+}
+
+.footer .footer-links li+li {
+	padding-top: 10px;
+}
+
+.footer .footer-links li a {
+	position: relative;
+}
+
+.footer .footer-links li a:after {
+	content: "";
+	position: absolute;
+	width: 0px;
+	left: auto;
+	right: 0;
+	bottom: 0;
+	height: 1px;
+	transition: ease all 0.35s;
+	background: #F84E77;
+}
+
+.footer .footer-links li a:hover:after {
+	width: 100%;
+	left: 0;
+	right: auto;
+}
+
+.footer .footer-top {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.footer .footer-top h5,
+.footer .footer-top .h5 {
+	position: relative;
+	font-size: 1.2rem;
+	text-transform: uppercase;
+}
+
+@media (min-width: 768px) {
+	.footer .footer-top {
+		padding-top: 2rem;
+		padding-bottom: 1rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.footer .footer-top {
+		padding-top: 3rem;
+		padding-bottom: 2rem;
+	}
+}
+
+.footer .footer-border-top {
+	border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-border-top.dark {
+	border-top: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.footer .footer-border-bottom {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer .footer-border-bottom.dark {
+	border-bottom: 1px solid rgba(16, 16, 16, 0.1);
+}
+
+.bg-dark-gradient {
+	background: linear-gradient( 180deg, #101010 50%, black 100%) repeat-x !important;
+}
+
+.white-link a {
+	color: rgba(255, 255, 255, 0.65);
+}
+
+a {
+	text-decoration: none
+}
+
+.avatar-lg img {
+   width:90px;
+   height:90px;
+}
+
+.text-white{
+color:#fff !important;
+}
+
+
+
+
+
+
+
+ 
+
+ 
+
+ 
+
+  
+  

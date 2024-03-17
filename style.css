@@ -26,6 +26,9 @@ ul{
    position: fixed;
    margin-top: -63px;
    margin-left: 200px;
+   position: sticky;
+
+
    
    
 }
@@ -42,7 +45,7 @@ ul li a {
     font-size: 15px;
     text-transform: uppercase;
     padding: 0px 30px;
-    color: black;
+    color:black;
     font-weight: bold;
      text-decoration: none; 
 }
@@ -78,7 +81,7 @@ ul li a:hover{
   
 
 img{
- margin-top: 17px;
+ margin-top: -4px;
 }
 
 .heading{
@@ -91,49 +94,60 @@ img{
   font-size: 25px;
   background-image: url(stock-photo--businesswoman-hand-working-with-laptop-computer-tablet-and-smart-phone-in-modern-office-with-1041718081.jpg);
  background-repeat: no-repeat;
+ color: black;
 }
 p{
-    margin-inline-start: 569px;   
+    margin-inline-start: 569px; 
+	color:black;  
 }
 
 h3{
     text-align: center;
     font-size: 55px;
+	color: black;
+}
+:root{
+    --color1: #be2edd;
+    --color2:#e056fd;
+}
+.serviceBox{
+    color: #fff;
+    background: linear-gradient(to top left,var(--color1) 49%,var(--color2) 50%);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 55px 55px;
+    position:relative;
+    z-index: 1;
+	margin-top: 100px;
+
 }
 
-.card {
-    box-sizing: border-box;
-    width: 190px;
-    height: 254px;
-    background: rgba(217, 217, 217, 0.58);
-    border: 1px solid white;
-    box-shadow: 12px 17px 51px rgba(211, 30, 30, 0.409);
-    backdrop-filter: blur(6px);
-    border-radius: 17px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.5s;
-    display: inline-block;
-    align-items: center;
-    justify-content: center;
-    user-select: none;
-    font-weight: bolder;
-    color: black;
-    margin-inline-start:269px;    
-  }
-  
-  .card:hover {
-    border: 1px solid rgb(26, 80, 188);
-    transform: scale(1.05);
-  }
-  
-  .card:active {
-    transform: scale(0.95) rotateZ(1.7deg);
-  }
+.serviceBox .title{
+    font-size: 60pxpx;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+    margin: 0 0 10px;
+}
+.serviceBox .description{
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    height: 55px;
+    margin-inline: 375px;
+	
+}
+.serviceBox.orange{ 
+    --color1:#FF7200;
+    --color2:#FE9400;
+}
 
+
+  
+ 
   h4{
     text-align: center;
     font-size: 55px;
+	color:black;
   }
 
   .container{
@@ -142,11 +156,14 @@ h3{
 	display: grid;
 	justify-content: center;
 	align-content: center;
+	margin-left: 163px;
+	
 	
 	.testimonial-box{
 		position: relative;
 		width: 500px;
 		height: 300px;
+		
 		
 		&::before{
 			content: '';
@@ -249,7 +266,7 @@ h6{
 }
 a{
 	margin: 0 10px;
-	color: #fff;
+	color: black;
 	font-size: 1.5rem;
 	transition: all 400ms ease;
 }
@@ -261,6 +278,7 @@ a:hover{
 h5{
     font-size: 55px;
     text-align: center;
+	
 }
 .footer .footer-socila-icon a:hover {
 	background: #1baaa0;
@@ -272,6 +290,7 @@ h5{
 
 .footer .footer-links li+li {
 	padding-top: 10px;
+	
 }
 
 .footer .footer-links li a {
@@ -288,6 +307,7 @@ h5{
 	height: 1px;
 	transition: ease all 0.35s;
 	background: #F84E77;
+
 }
 
 .footer .footer-links li a:hover:after {
@@ -299,6 +319,8 @@ h5{
 .footer .footer-top {
 	padding-top: 1rem;
 	padding-bottom: 1rem;
+	background-color: burlywood;
+
 }
 
 .footer .footer-top h5,
@@ -306,62 +328,41 @@ h5{
 	position: relative;
 	font-size: 1.2rem;
 	text-transform: uppercase;
-}
-
-@media (min-width: 768px) {
-	.footer .footer-top {
-		padding-top: 2rem;
-		padding-bottom: 1rem;
-	}
-}
-
-@media (min-width: 992px) {
-	.footer .footer-top {
-		padding-top: 3rem;
-		padding-bottom: 2rem;
-	}
-}
-
-.footer .footer-border-top {
-	border-top: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer .footer-border-top.dark {
-	border-top: 1px solid rgba(16, 16, 16, 0.1);
-}
-
-.footer .footer-border-bottom {
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer .footer-border-bottom.dark {
-	border-bottom: 1px solid rgba(16, 16, 16, 0.1);
-}
-
-.bg-dark-gradient {
-	background: linear-gradient( 180deg, #101010 50%, black 100%) repeat-x !important;
-}
-
-.white-link a {
-	color: rgba(255, 255, 255, 0.65);
-}
-
-a {
-	text-decoration: none
-}
-
-.avatar-lg img {
-   width:90px;
-   height:90px;
-}
-
-.text-white{
-color:#fff !important;
+	background-color:bisque ;
 }
 
 
 
 
+ 
+
+  
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+
+  
+  
 
 
 
